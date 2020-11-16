@@ -10,13 +10,5 @@ edition = "2018"
 serialport = "3.3.0"
 
 [[bin]]
-name = "autobrigtness"
-path = "main.rs"
-
-[[bin]]
-name = "test"
-path = "test.rs"
-
-[[bin]]
 name = "display_controller"
 path = "display_controller.rs"
