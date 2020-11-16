@@ -32,7 +32,7 @@ fn controller_generator(port_path: &str) -> DisplayController {
         brightness: 100,
         backlight: true,
         serial_settings: serial_settings,
-        serial_port: serialport::open_with_settings(&port_path, &serial_settings).unwrap()
+        serial_port: serialport::open_with_settings("/dev/ttyAMA0", &serial_settings).unwrap()
     }
 }
 
