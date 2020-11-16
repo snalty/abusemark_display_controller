@@ -46,7 +46,7 @@ fn main() {
         std::process::exit(1)
     }
 
-    let mut display_controller = controller_generator("/dev/TTYAMA0");
+    let mut display_controller = controller_generator("/dev/ttyAMA0");
 
     display_controller.set_brightness(*brightness);
     println!("Set brightness to {}", brightness)
